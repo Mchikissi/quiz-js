@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+:root {
+    --back: #0d479a;
+    --white: #ffffff;
+    --green: #04AA6d;
+    --darkGreen: #03a369;
+    --lightGreen: #80ffd0;
+    --lightRed: rgb(255, 119, 119);
+    --box-shadow: 7px 10px 5px -4px rgba(0, 0, 0, 0.34);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.quiz {
+    background-color: var(--back);
+    padding: 30px;
+}
+
+.heading {
+    margin: 10px auto 40px auto;
+}
+
+.heading .title {
+    font-size: 30px;
+    color: var(--white);
+    font-weight: 500;
+    text-align: center;
+}
+
+.heading .subtitle {
+    font-size: 20px;
+    color: var(--white);
+    font-weight: 300;
+    text-align: center;
+}
+
+.result {
+    text-align: center;
+    min-width: 350px;
+    max-width: 400px;
+    margin: 20px auto;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow)
+}
+
+.result p:first-child {
+    padding: 10px 20px;
+}
+
+.hide {
+    display: none;
+}
+
+.reload button {
+    background-color: var(--green);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 0px 0px 5px 5px;
+    border: 0px;
+    width: 100%;
+}
+
+.reload button:hover {
+    background-color: var(--darkGreen);
+    cursor: pointer;
+}
+
+.quiz-form {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.question {
+    background-color: var(--white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 20px 0px;
+    box-shadow: var(--box-shadow);
+}
+
+.question>* {
+    font-size: 15px;
+}
+
+.option {
+    margin-left: 10px;
+}
+
+.submit {
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.submit input {
+    background-color: var(--green);
+    padding: 5px 25px;
+    color: var(--white);
+    font-size: 22px;
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+
+.submit input:hover {
+    background-color: var(--darkGreen);
+    cursor: pointer;
+}
+
+.correct {
+    background-color: var(--lightGreen);
+}
+
+.wrong {
+    background-color: var(--lightRed);
+}
